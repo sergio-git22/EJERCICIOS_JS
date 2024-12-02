@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="saludo"></h1>
+
+    <script>
+        let nombreIntroducido = prompt ("Escribe tu nombre")
+        console.log("Pintamos variable nombreIntroducido ==" + nombreIntroducido);
+
+        let saludoPrompt = "Buenos días estimado/a" + nombreIntroducido + " a currar que ya es lunes";
+        console.log("Pintamos variable saludoPrompt ==" + saludoPrompt);
+
+        document.getElementById("saludo").textContent = saludoPrompt;
+    </script>
+
+</body>
+</html>
